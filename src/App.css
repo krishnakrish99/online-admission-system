@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.center{
+  text-align:center;
+  padding:200px ;
+}
+
+.divhomeleader{
+  display: flex;
+  
+}
+.Eng{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/engineer.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.MBA{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/MBA.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.MBBS{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/MBBS.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.finance{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/finance.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.ART{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/ART.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.Design{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/Design.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
