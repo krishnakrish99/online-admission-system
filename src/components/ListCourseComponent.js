@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CourseService from '../services/CourseService';
-import Staffheader from './Staffheader'
+// import Staffheader from './Staffheader'
+import Adminheader from './Adminheader'
 
 class ListCourseComponent extends Component {
     constructor(props) {
@@ -44,7 +45,7 @@ class ListCourseComponent extends Component {
         return (
             <div>
                 {/* <button className="btn btn-dark" onClick={() => {window.open("/StaffProfile", "_self");}}> Back</button> */}
-                 <Staffheader />
+                 <Adminheader />
                 <h2 className="text-center">Course List</h2>
                  <div >
                     <button className="btn btn-primary" onClick={this.addCourse}> Add Course</button>

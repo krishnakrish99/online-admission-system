@@ -18,8 +18,8 @@ class AboutCourses extends Component {
        render() {
         return (
             <div>
-                <div className="text-center"><input type="text"  placeholder="search course.." /><button >search</button></div>
-                <br></br>
+                {/* <div className="text-center"><input type="text"  placeholder="search course.." /><button >search</button></div>
+                <br></br> */}
                 <h2 className="text-center">Course List</h2>
                  <div >
                     <button className="btn btn-primary" onClick={() => {window.open("/home", "_self");}}>Back</button>

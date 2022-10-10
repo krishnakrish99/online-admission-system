@@ -111,8 +111,8 @@ class AdminLogin extends React.Component {
             </div>
           </form>
           <br></br>
-          <button className="btn btn-light"  onClick={() => {window.open("/StaffLogin", "_self")}}>Login As Staff</button>
-          <button style={{marginLeft: "10px"}} className="btn btn-light"  onClick={() => {window.open("/AdmissionCommiteeLogin", "_self")}}>Login As AdmissionCommitee</button>
+          {/* <button className="btn btn-light"  onClick={() => {window.open("/StaffLogin", "_self")}}>Login As Staff</button>
+          <button style={{marginLeft: "10px"}} className="btn btn-light"  onClick={() => {window.open("/AdmissionCommiteeLogin", "_self")}}>Login As AdmissionCommitee</button> */}
 
           </div>
           </div>

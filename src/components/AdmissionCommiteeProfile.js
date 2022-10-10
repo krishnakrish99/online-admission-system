@@ -10,7 +10,8 @@ class AdmissionCommiteeProfile extends Component {
                 <AdmissionCommiteeheader />
                 <div class="center">
                 <h1>Welcome {localStorage.getItem("AdmissionCommiteepassword")}
-                </h1></div>
+                </h1>
+                </div>
                 </div>
 
 

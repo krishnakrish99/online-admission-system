@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import applicantService from '../services/applicantService'
-import AdmissionCommiteeheader from './AdmissionCommiteeheader'
+// import AdmissionCommiteeheader from './AdmissionCommiteeheader'
+import Adminheader from './Adminheader'
 
 class ListApplicantComponent extends Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class ListApplicantComponent extends Component {
         return (
             <div>
                 
-                <AdmissionCommiteeheader />
+                <Adminheader />
                  <h2 className="text-center">Applicants List</h2>
                  {/* <div className = "row"> */}
                     {/* <button className="btn btn-primary" onClick={this.addApplicant}> Add Applicant</button> */}
