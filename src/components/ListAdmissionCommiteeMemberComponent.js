@@ -51,6 +51,10 @@ class ListAdmissionCommiteeMemberComponent extends Component {
                  </div>
                  <br></br>
                  <div className = "row">
+                    <button className="btn btn-primary" onClick={this.getallMembers}>Members</button>
+                 </div>
+                 <br></br>
+                 <div className = "row">
                         <table className = "table table-striped table-bordered">
 
                             <thead>

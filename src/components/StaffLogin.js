@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import loginService from '../services/loginService';
+import HeaderComponent from './HeaderComponent';
 
 class StaffLogin extends React.Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class StaffLogin extends React.Component {
           if(res.data==="staff successfully Login"){
           localStorage.setItem('StaffId', loginDetails.loginId);
           localStorage.setItem('Staffpassword', loginDetails.password);
-          window.open("/StaffProfile", "_self");
+          window.open("/Userprofile", "_self");
           }
           else
           alert("Login Failed please enter correct Id & Password");
@@ -61,14 +62,26 @@ class StaffLogin extends React.Component {
   
     render() {
       return (
-        <div>
-            <div className = "container">
-                        <div className = "row">
-                            <div className = "card col-md-6 offset-md-3 offset-md-3">
-                            <br></br>
-                            <h2 className="text-center">Applicant Login</h2>
+        // <div>
+        //     <div className = "container">
+        //                 <div className = "row">
+        //                     <div className = "card col-md-6 offset-md-3 offset-md-3">
+        //                     <br></br>
+        //                     <h2 className="text-center">User Login</h2>
                  
-                                <div className = "card-body">
+        //                         <div className = "card-body">
+        <div>
+          <HeaderComponent/>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className="container">
+                    <div className="row">       
+                    <div className = "card col-md-6 offset-md-3 shadow-lg p-3 mb-5 bg-body rounded">
+                    <div >
+                         <h2 className="text-center fst-italic"> User Login</h2>
+                          <div className = "card-body"></div>
             
           <form
             name="contactform"
@@ -79,11 +92,11 @@ class StaffLogin extends React.Component {
             <div className = "form-group">
            
               <fieldset>
-              <label> Staff Id </label>
+              <label> User Id </label>
               
                 <input
                   ref="StaffId"
-                  placeholder="StaffId"
+                  placeholder="UserId"
                   className="form-control"
                   
                   onChange={this.handleChange.bind(this, "StaffId")}
@@ -105,12 +118,15 @@ class StaffLogin extends React.Component {
                 <br />
                 <button style={{marginLeft: "10px"}} className="btn btn-dark" >Login</button>
 
-                <br />
+                {/* <br />
+                <br/> */}
+                <button style={{marginLeft: "400px"}} className="btn btn-dark"  onClick={() => {window.open("/registeruser", "_self")}}>Register</button>
+                
               </fieldset>
             </div>
           </form>
-          <br></br>
-          <button style={{marginLeft: "10px"}} className="btn btn-dark"  onClick={() => {window.open("/home", "_self")}}>back</button>
+          {/* <br></br>
+          <button style={{marginLeft: "10px"}} className="btn btn-dark"  onClick={() => {window.open("/home", "_self")}}>back</button> */}
 
           </div>
           </div>

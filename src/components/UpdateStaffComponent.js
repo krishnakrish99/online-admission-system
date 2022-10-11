@@ -56,7 +56,7 @@ class UpdateStaffComponent extends Component {
             let staff = {password: this.state.password, role: this.state.role};
             console.log('staff => ' + JSON.stringify(staff));
         StaffService.updateStaff(staff,this.state.staffid).then(res =>{
-            this.props.history.push('/staffs');
+            this.props.history.push('/userlist');
         });
     }     
         }
@@ -82,6 +82,18 @@ class UpdateStaffComponent extends Component {
                         <h2 className="text-center">UPDATE STAFF DETAILS</h2>
                             <div className = "card-body">
                                 <form>
+                                <div className="form-group"> 
+                                     <label> Name:</label>
+                                     <input  placeholder="Name" 
+                                             name="role" 
+                                             className="form-control" 
+                                             value={this.state.role} 
+                                             onChange={this.changeRoleHandler}/>
+                                             <div style={{fontsize:12 ,color:"red"}}>
+                                             {this.state.roleError}
+                                             </div>
+                                               
+                                     </div>
                                     <div className="form-group"> 
                                      <label> PASSWORD:</label> 
                                      <input  placeholder="PASSWORD" 
@@ -92,22 +104,12 @@ class UpdateStaffComponent extends Component {
                                              <div style={{fontsize:12 ,color:"red"}}>
                                              {this.state.passwordError} </div>
                                      </div>
-                                     <div className="form-group"> 
-                                     <label> ROLE:</label>
-                                     <input  placeholder="ROLE" 
-                                             name="role" 
-                                             className="form-control" 
-                                             value={this.state.role} 
-                                             onChange={this.changeRoleHandler}/>
-                                             <div style={{fontsize:12 ,color:"red"}}>
-                                             {this.state.roleError}
-                                             </div>
-                                               
-                                     </div>
+                                     
                                               <br></br>
                                      <button className="btn btn-success" onClick={this.updateStaff}> UPDATE</button>
-                                    <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
-             
+                                    {/* <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button> */}
+
+                                    <button style={{marginLeft: "10px"}} className="btn btn-dark"  onClick={() => {window.open("/userlist", "_self")}}>back</button>
                                  </form>
                                  </div>
                               </div>

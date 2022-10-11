@@ -108,6 +108,7 @@ class AdmissionCommiteeLogin extends React.Component {
                 <button style={{marginLeft: "10px"}} className="btn btn-dark" >Login</button>
 
                 <br />
+                <button style={{marginLeft: "10px"}} className="btn btn-light"  onClick={() => {window.open("/CreateUser", "_self")}}>Register</button>
               </fieldset>
             </div>
           </form>

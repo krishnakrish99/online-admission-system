@@ -27,9 +27,9 @@ class HeaderComponent extends Component {
                     {/* <Button onclick> HOME </Button> */}
                     <div>
 
-                    <button style={{marginLeft: "500px"}} onClick={() => {window.open("/home", "_self");}} className="btn btn-dark">Home</button>
-                     <button onClick={() => {window.open("/AboutCourses", "_self");}} className="btn btn-dark">About courses</button>
-                    <button onClick={() => {window.open("/form", "_self");}} className="btn btn-dark">Apply for Admission</button>
+                    <button style={{marginLeft: "950px"}} onClick={() => {window.open("/home", "_self");}} className="btn btn-dark">Home</button>
+                     <button onClick={() => {window.open("/AboutCourses", "_self");}} className="btn btn-dark">Courses list</button>
+                    {/* <button onClick={() => {window.open("/form", "_self");}} className="btn btn-dark">Students Enrolled</button> */}
                     
                     <button className="btn btn-dark" onClick={() => {window.open("/AdminLogin", "_self");}}>LogIn</button>
 

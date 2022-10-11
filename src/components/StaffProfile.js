@@ -8,10 +8,10 @@ class StaffProfile extends Component {
             
                 <div>
                 <Staffheader />
-                <div class="center">
-                <h1>Welcome {localStorage.getItem("Staffpassword")}
+                {/* <div class="center">
+                <h1>Welcome {localStorage.getItem("Staffrole")}
                 </h1>
-                </div>
+                </div> */}
                 </div>
 
         )

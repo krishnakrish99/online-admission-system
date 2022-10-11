@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 // import { useState } from 'react';
+import { Form, Button } from 'semantic-ui-react';
+import HeaderComponent from './HeaderComponent';
 
 class AdminLogin extends React.Component {
     constructor(props) {
@@ -62,16 +64,30 @@ class AdminLogin extends React.Component {
   
     render() {
       return (
-        <div>
-            <div className = "container">
-                        <div className = "row">
-                            <div className = "card col-md-6 offset-md-3 offset-md-3">
-                            <br></br>
-                            <h2 className="text-center">Admin Login</h2>
+        // <div>
+        //     <div className = "container">
+        //                 <div className = "row">
+        //                     <div className = "card col-md-6 offset-md-3 offset-md-3">
+        //                     <br></br>
+        //                     <h2 className="text-center">Admin Login</h2>
                  
-                                <div className = "card-body">
+        //                         <div className = "card-body">
+        
+        <div>
+          <HeaderComponent></HeaderComponent>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div className="container">
+                    <div className="row">       
+                    <div className = "card col-md-6 offset-md-3 shadow-lg p-3 mb-5 bg-body rounded">
+                    <div >
+                         <h2 className="text-center fst-italic"> Admin Login</h2>
+                          <div className = "card-body"></div>
             
-          <form
+          <Form
+         
             name="contactform"
             className="contactform"
             onSubmit={this.contactSubmit.bind(this)}
@@ -104,16 +120,17 @@ class AdminLogin extends React.Component {
                 />
                 <span style={{ color: "red" }}>{this.state.errors["password"]}</span>
                 <br />
-                <button style={{marginLeft: "10px"}} className="btn btn-dark"  >Login</button>
+                
+                <Button style={{marginLeft: "10px"}} className="btn btn-dark"  >Login</Button>
 
-                <br />
+                <Button style={{marginLeft: "400px"}} className="btn btn-dark"  onClick={() => {window.open("/userLogin", "_self")}}>User Login</Button>
               </fieldset>
             </div>
-          </form>
-          <br></br>
-          {/* <button className="btn btn-light"  onClick={() => {window.open("/StaffLogin", "_self")}}>Login As Staff</button>
-          <button style={{marginLeft: "10px"}} className="btn btn-light"  onClick={() => {window.open("/AdmissionCommiteeLogin", "_self")}}>Login As AdmissionCommitee</button> */}
-
+          </Form>
+          
+          
+          {/* <button style={{marginLeft: "10px"}} className="btn btn-light"  onClick={() => {window.open("/AdmissionCommiteeLogin", "_self")}}>Login As AdmissionCommitee</button> */}
+          
           </div>
           </div>
           </div>

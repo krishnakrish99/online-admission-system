@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import applicantService from '../services/applicantService';
+import CourseService from '../services/CourseService';
 
 
 class form extends React.Component {
@@ -15,8 +16,14 @@ class form extends React.Component {
         course: '',
         fields: {},
         errors: {},
+        courses: []
       };
     }
+    componentDidMount(){
+      CourseService.getCourses().then((response) => {
+          this.setState({ courses: response.data})
+      });
+  }
   
     handleValidation() {
       let fields = this.state.fields;
@@ -190,14 +197,34 @@ class form extends React.Component {
                 <br />
                 
                 <label> Course Name: </label>
+                <select id="course" name="course"
+                refs="course"
+                placeholder="course"
+                className="form-control"
+
+                onChange={this.handleChange.bind(this, "course")}
               
-                <input
-                  refs="course"
-                  placeholder="course"
-                  className="form-control"
-                  onChange={this.handleChange.bind(this, "course")}
-                  value={this.state.fields["course"]}
-                />
+                value={this.state.fields["course"]}
+                  >
+                     {
+                                    this.state.courses.map(
+                                        course => 
+                                        <option key = {course.id}>
+                                           
+                                             <option> {course.courseName}</option>
+                                                                          
+                                                                                      </option>
+                                    )
+                                }
+                    {/* <option>course</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBBS">MBBS</option>
+                    <option value="FINANCE">FINANCE</option>
+                    <option value="GRAPHIC DESIGNING">GRAPHIC DESIGNING</option>
+                    <option value="ARTS">ARTS</option> */}
+     
+                   
+                    </select>
                 <span style={{ color: "red" }}>{this.state.errors["course"]}</span>
                 <br />
                 <button className="btn btn-primary" style={{color:"black"}}  >submit</button>                            
