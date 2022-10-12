@@ -60,6 +60,7 @@ validate=()=>{
                      role: this.state.role};
         console.log('staff => ' + JSON.stringify(staff));
         StaffService.addStaff(staff).then(res=>{
+            alert("registered")
                     this.props.history.push('/');
         });
                  }
@@ -73,7 +74,7 @@ validate=()=>{
    cancel(){
     this.props.history.push('/staffs');
   }
-   
+
     render() {
         return (
             <div>

@@ -47,7 +47,7 @@ class ListApplicantComponent extends Component {
             <div>
                 
                 <Adminheader />
-                 <h2 className="text-center">Applicants List</h2>
+                 <h2 className="text-center">Students List</h2>
                  {/* <div className = "row"> */}
                     {/* <button className="btn btn-primary" onClick={this.addApplicant}> Add Applicant</button> */}
                  {/* </div> */}
@@ -55,9 +55,9 @@ class ListApplicantComponent extends Component {
                  <div className = "row">
                         <table className = "table table-striped table-bordered">
 
-                            <thead>
+                            <thead className='table-dark'>
                                 <tr>
-                                    <th> Applicant Id</th>
+                                    <th> Student Id</th>
                                     <th> Student_Name</th>
                                     <th> ContactNumber</th>
                                     <th> Student_Degree</th>
@@ -65,12 +65,12 @@ class ListApplicantComponent extends Component {
                                     <th> Action </th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='table-light'>
                                 {
                                     this.state.applicants.map(
                                         applicants => 
                                         <tr key = {applicants.applicant_id}>
-                                            <td> {applicants.applicantId} </td>
+                                            <td align="right"> {applicants.applicantId} </td>
                                              <td> {applicants.studentname} </td>   
                                              <td> {applicants.contactNumber}</td>
                                              <td> {applicants.studentDegree}</td>

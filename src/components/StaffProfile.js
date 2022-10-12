@@ -8,8 +8,9 @@ class StaffProfile extends Component {
             
                 <div>
                 <Staffheader />
+                <div className='user1'></div>
                 {/* <div class="center">
-                <h1>Welcome {localStorage.getItem("Staffrole")}
+                <h1>Welcome, User Id: {localStorage.getItem("StaffId")}
                 </h1>
                 </div> */}
                 </div>

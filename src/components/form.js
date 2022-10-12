@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import applicantService from '../services/applicantService';
 import CourseService from '../services/CourseService';
-
+import Staffheader from './Staffheader';
 
 class form extends React.Component {
     constructor(props) {
@@ -113,7 +113,9 @@ class form extends React.Component {
   
     render() {
       return (
+        
         <div>
+          <Staffheader />
             <div className = "container">
                         <div className = "row">
                             <div className = "card col-md-6 offset-md-3 offset-md-3">
@@ -187,7 +189,8 @@ class form extends React.Component {
               
                 <input
                   refs="password"
-                  placeholder="Contact Number"
+                  type="password"
+                  placeholder="password"
                   className="form-control"
                   
                   onChange={this.handleChange.bind(this, "password")}
@@ -228,15 +231,15 @@ class form extends React.Component {
                 <span style={{ color: "red" }}>{this.state.errors["course"]}</span>
                 <br />
                 <button className="btn btn-primary" style={{color:"black"}}  >submit</button>                            
-                
-                                       
+                {/* <button style={{marginLeft: "10px"}} className="btn btn-dark"  onClick={() => {window.open("/home", "_self")}}>back</button>
+                                        */}
               </fieldset>
             </div>
             {/* <button className="btn btn-dark">submit</button> */}
           </form>
-          <br />
+          
                 
-          <button style={{marginLeft: "10px"}} className="btn btn-dark"  onClick={() => {window.open("/home", "_self")}}>back</button>
+          
                                     
           </div>
           </div>

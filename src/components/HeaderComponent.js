@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 // import {Button} from "reactstrap";
+import pic from "./images/logo-guru.webp";
 
 
 class HeaderComponent extends Component {
@@ -22,7 +23,10 @@ class HeaderComponent extends Component {
             <div>
                 <header>
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                    <div><a href=" " style={{marginLeft: "10px"}} className="navbar-brand">OnlineAdmissionSystem</a></div>
+                    <div><a href=" " style={{marginLeft: "10px"}} className="navbar-brand">
+                    <img src={pic} alt="logo" width="200" height="70"/>
+                        {/* OnlineAdmissionSystem */}
+                        </a></div>
                     
                     {/* <Button onclick> HOME </Button> */}
                     <div>

@@ -49,9 +49,10 @@ class StaffLogin extends React.Component {
           else
           alert("Login Failed please enter correct Id & Password");
          });
-        } else {
-        alert("Form has errors.");
-      }
+        } 
+      //   else {
+      //   alert("Form has errors.");
+      // }
     }
   
     handleChange(field, e) {
@@ -109,6 +110,7 @@ class StaffLogin extends React.Component {
                 <input
                   refs="password"
                   placeholder="password"
+                  type="password"
                   className="form-control"
                   
                   onChange={this.handleChange.bind(this, "password")}

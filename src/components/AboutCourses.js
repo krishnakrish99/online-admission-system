@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CourseService from '../services/CourseService';
+import HeaderComponent from './HeaderComponent';
 
 class AboutCourses extends Component {
     constructor(props) {
@@ -20,29 +21,27 @@ class AboutCourses extends Component {
             <div>
                 {/* <div className="text-center"><input type="text"  placeholder="search course.." /><button >search</button></div>
                 <br></br> */}
-                <h2 className="text-center">Course List</h2>
-                 <div >
-                    <button className="btn btn-primary" onClick={() => {window.open("/home", "_self");}}>Back</button>
-                 </div>
-                 <br></br>
+                <HeaderComponent></HeaderComponent>
+                <br></br>
+                 
                  
                  <div className = "row">
-                        <table className = "table table-striped table-bordered" >
+                        <table className = "table table-striped table-bordered " >
 
-                            <thead>
+                            <thead className='table-dark'>
                                 <tr>
-                                    <th> CourseId</th>
+                                    <th > CourseId</th>
                                     <th> Course Name</th>
                                     <th> Course Duration</th>
                                     <th> Course Fees</th>
                                     </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='table-light'>
                                 {
                                     this.state.courses.map(
                                         course => 
-                                        <tr key = {course.id}> 
-                                            <td> {course.courseId}</td>
+                                        <tr key = {course.id} > 
+                                            <td align="right"> {course.courseId}</td>
                                              <td> {course.courseName}</td>
                                              <td> {course.courseDuration}</td>
                                              <td> {course.courseFees}</td>                               
@@ -53,6 +52,10 @@ class AboutCourses extends Component {
                         </table>
 
                  </div>
+                 {/* <div >
+                    <button className="btn btn-primary" onClick={() => {window.open("/home", "_self");}}>Back</button>
+                 </div> */}
+                 
 
             </div>
         );

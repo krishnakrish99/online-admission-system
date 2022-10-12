@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -98,4 +98,175 @@
   background-size: contain;
   margin-left: 100px;
   border-radius: 10%;
+} */
+body{
+  background-color: #cccccc;
+  background-image: url("data:image/jpeg;base64,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");
+  background-repeat: no-repeat ;
+ 
+  background-size: cover;
+  background-position: fixed;
+ 
+  /* background-image: radial-gradient(red, yellow); */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.center{
+  text-align:center;
+  padding:200px ;
+}
+
+.divhomeleader{
+  display: flex;
+
+  
+}
+
+.home1{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/home1.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+
+.Eng{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/engineer.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.MBA{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/MBA.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.MBBS{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/MBBS.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.finance{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/finance.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.ART{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/ART.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+.Design{
+  height: 150px;
+  width: 220px;
+  margin-top: 40px;
+  background: url("./components/images/Design.jpg");
+  background-size: contain;
+  margin-left: 100px;
+  border-radius: 10%;
+}
+
+.Course{
+  height: 150px;
+  width: 300px;
+  /* margin-top: 40px; */
+  /* background: url("./components/images/Course.jpg"); */
+  background-size: contain;
+  margin-left: 100px;
+  margin-bottom: 150px;
+  border-radius: 10%;
+}
+
+/* .style{
+  background-color: aquamarine;
+  width: '100%';
+  height: '100%';
+} */
+table,th,td{
+  border: 2px solid black;
+}
+.admin1{
+  height: 70vh;
+  width: 50vh;
+  margin-top: 40px;
+  background: url("./components/images/admin1.png");
+  background-size: contain;
+  
+  border-radius: 10%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat ;
+
+}
+.user1{
+  height: 100vh;
+  width: 50vh;
+  margin-top: 40px;
+  background: url("./components/images/user1.webp");
+  background-size: contain;
+  
+  border-radius: 10%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat ;
 }

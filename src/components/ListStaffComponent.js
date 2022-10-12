@@ -65,7 +65,7 @@ addStaff(){
                         this.state.staffs.map(
                              staff=>
                          <tr key={staff.staffid}>
-                         <td><strong>{staff.staffid}</strong></td>
+                         <td align="right"><strong>{staff.staffid}</strong></td>
                          <td className="table-primary"><strong>{staff.role}</strong></td>
                          <td className="table-warning"><strong>{staff.password}</strong></td>
                          

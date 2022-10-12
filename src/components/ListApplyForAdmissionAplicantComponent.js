@@ -45,7 +45,7 @@ class ListApplyForAdmissionAplicantComponent extends Component {
                  <div className = "row">
                         <table className = "table table-striped table-bordered">
 
-                            <thead>
+                            <thead className='table-dark'>
                                 <tr>
                                     <th> Applicant Id</th>
                                     <th> Student_Name</th>
@@ -57,12 +57,12 @@ class ListApplyForAdmissionAplicantComponent extends Component {
                                     <th> Action </th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='table-light'>
                                 {
                                     this.state.applicant.map(
                                         applicant => 
                                         <tr key = {applicant.applicant_id}>
-                                            <td> {applicant.applicantId} </td>
+                                            <td align="right"> {applicant.applicantId} </td>
                                              <td> {applicant.studentname} </td>   
                                              <td> {applicant.contactNumber}</td>
                                              <td> {applicant.studentDegree}</td>

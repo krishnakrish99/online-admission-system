@@ -51,9 +51,10 @@ class AdminLogin extends React.Component {
          
         }
         // alert("Form submitted");
-      } else {
-        alert("Form has errors.");
       }
+      //  else {
+      //   alert("Form has errors.");
+      // }
     }
   
     handleChange(field, e) {
@@ -113,6 +114,7 @@ class AdminLogin extends React.Component {
                 <input
                   refs="password"
                   placeholder="password"
+                  type="password"
                   className="form-control"
                   
                   onChange={this.handleChange.bind(this, "password")}

@@ -46,7 +46,7 @@ class ViewCourseList extends Component {
                                     this.state.courses.map(
                                         course => 
                                         <tr key = {course.id}> 
-                                            <td> {course.courseId}</td>
+                                            <td align="right"> {course.courseId}</td>
                                              <td> {course.courseName}</td>
                                              <td> {course.courseDuration}</td>
                                              <td> {course.courseFees}</td>                               

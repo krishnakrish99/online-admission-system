@@ -55,7 +55,7 @@ class ListCourseComponent extends Component {
                  <div className = "row">
                         <table className = "table table-striped table-bordered">
 
-                            <thead>
+                            <thead className='table-dark'>
                                 <tr>
                                     <th> CourseId</th>
                                     <th> Course Name</th>
@@ -64,12 +64,12 @@ class ListCourseComponent extends Component {
                                     <th> Actions</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='table-light'>
                                 {
                                     this.state.courses.map(
                                         course => 
                                         <tr key = {course.id}> 
-                                            <td> {course.courseId}</td>
+                                            <td align="right"> {course.courseId}</td>
                                              <td> {course.courseName}</td>
                                              <td> {course.courseDuration}</td>
                                              <td> {course.courseFees}</td>                               

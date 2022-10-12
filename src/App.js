@@ -15,7 +15,7 @@ import AdminProfile from './components/AdminProfile';
 import ListStaffComponent from './components/ListStaffComponent';
 import AddStaffComponent from './components/AddStaffComponent';
 import UpdateStaffComponent from './components/UpdateStaffComponent';
-import CreateMemberComponent from './components/CreateMemberComponent';
+import CreateMemberComponent from './components/CreateMemberComponent'; 
 import UpdateMemberComponent from'./components/UpdateMemberComponent';
 import ListAdmissionCommiteeMemberComponent from "./components/ListAdmissionCommiteeMemberComponent";
 import ListCourseComponent from './components/ListCourseComponent';
@@ -34,12 +34,12 @@ function App() {
                      <Switch>
                      <Route path = "/AdminLogin" component = {AdminLogin}></Route>
                      <Route path = "/userLogin" component = {StaffLogin}></Route>
-                     {/* <Route path = "/AdmissionCommiteeLogin" component = {AdmissionCommiteeLogin}></Route>            */}
+                     <Route path = "/AdmissionCommiteeLogin" component = {AdmissionCommiteeLogin}></Route>           
                      <Route path = "/student" component = {ListApplicantComponent}></Route> 
                      <Route path = "/" exact component = {Home}></Route>
                      <Route path = "/form" component = {form}></Route>
                      <Route path = "/Userprofile" component = {StaffProfile}></Route>
-                     {/* <Route path = "/AdmissionCommiteeProfile" component = {AdmissionCommiteeProfile}></Route> */}
+                     <Route path = "/AdmissionCommiteeProfile" component = {AdmissionCommiteeProfile}></Route>
                      <Route path = "/home" component = {Home}></Route>
                      <Route path = "/applicant" component = {ListApplyForAdmissionAplicantComponent}></Route>
                      <Route path = "/AboutCourses" component = {AboutCourses}></Route>
@@ -47,8 +47,8 @@ function App() {
                      <Route path = "/userlist" component = {ListStaffComponent}></Route>
                      <Route path = "/registeruser" component = {AddStaffComponent}></Route>
                      <Route path = "/update-staff/:staffid" component = {UpdateStaffComponent}></Route>
-                     <Route path = "/getallMembers" component = {ListAdmissionCommiteeMemberComponent}></Route>
-                     <Route path = "/addMember" component = {CreateMemberComponent}></Route>
+                     <Route path = "/getallMembers" component = {ListAdmissionCommiteeMemberComponent}></Route> 
+                      <Route path = "/addMember" component = {CreateMemberComponent}></Route>
                      <Route path = "/updateMember/:id" component = {UpdateMemberComponent}></Route>
                      <Route path = "/viewAllCourses" component = {ListCourseComponent}></Route>
                      <Route path = "/addCourse" component = {CreateCourseComponent}></Route>

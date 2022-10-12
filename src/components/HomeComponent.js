@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
-import pic from "./images/home1.jpg";
+
 class HomeComponent extends React.Component{
 
     render(){
@@ -10,11 +10,14 @@ return(
     <div>
 
     <HeaderComponent />
-    <br></br>
+    
     <div className="container">
-    <img src={pic} /><br></br><br></br>
-    <center><h1>Appropriate Courses Available For <br></br> Making Your Future Bright </h1></center>
-    <br></br>
+    <div className="home1"></div>
+        
+    {/* <img src={pic} /> */}
+   
+    <center><h3>Appropriate Courses Available For Making Your Future Bright </h3></center>
+    
     <div className="divhomeleader">  
     <div className="Eng"></div>
     <div className="MBA"></div>

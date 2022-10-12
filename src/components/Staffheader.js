@@ -23,7 +23,7 @@ class Staffheader extends Component {
                     {/* <Button onclick> HOME </Button> */}
                     <div>
 
-                    <button style={{marginLeft: "800px"}} onClick={() => {window.open("/StaffProfile", "_self");}} className="btn btn-dark">Profile</button>
+                    <button style={{marginLeft: "800px"}} onClick={() => {window.open("/UserProfile", "_self");}} className="btn btn-dark">Profile</button>
                     <button  className="btn btn-dark" onClick={() => {window.open("/form", "_self");}}>Admission form</button>
                     <button  className="btn btn-dark" onClick={() => {localStorage.removeItem('StaffId'); localStorage.removeItem('Staffpassword'); window.open("/home", "_self");}}>Logout</button>       
                         </div>
